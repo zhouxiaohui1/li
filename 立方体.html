@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        .box{
+            margin: 200px auto;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: rotateX(10deg) rotateY(10deg);
+            animation:xuan 3s infinite linear ;
+
+        }
+        .box:hover div:nth-of-type(1){
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .box:hover div:nth-of-type(2){
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        .box:hover div:nth-of-type(3){
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        .box:hover div:nth-of-type(4){
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .box:hover div:nth-of-type(5){
+            transform:  translateZ(100px);
+        }
+        .box:hover div:nth-of-type(6){
+            transform:  translateZ(-100px);
+        }
+        .box div{
+            position: absolute;
+            top: 0;
+            left: 0;
+            line-height: 100px;
+            text-align: center;
+            transition: all 1s;
+
+        }
+        .top{
+            transform: rotateX(90deg) translateZ(50px);
+        }
+        .boot{
+
+
+            transform: rotateX(-90deg) translateZ(50px);
+        }
+        .left{
+
+
+            transform: rotateY(-90deg) translateZ(50px);
+        }
+        .right{
+
+            transform: rotateY(90deg) translateZ(50px);
+
+        }
+        .qian{
+
+            transform: translateZ(50px);
+        }
+        .hou{
+
+            transform: translateZ(-50px);
+        }
+    @keyframes xuan {
+        0%{
+            transform: rotateX(20deg) rotateY(20deg);
+        }
+        100%{
+            transform: rotateX(380deg) rotateY(380deg);
+        }
+    }
+
+        .in-box{
+            margin: 100px auto;
+            position: relative;
+            bottom: 279px;
+            left: 26px;
+            transform-style: preserve-3d;
+            animation:xuan 3s infinite linear ;
+
+        }
+        .in-box div{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            line-height: 50px;
+            text-align: center;
+        }
+        .top1{
+            transform: rotateX(90deg) translateZ(25px);
+        }
+        .boot1{
+            transform: rotateX(90deg) translateZ(-25px);
+        }
+        .left1{
+            transform: rotateY(90deg) translateZ(25px);
+        }
+        .right1{
+
+            transform: rotateY(90deg) translateZ(-25px);
+        }
+        .qian1{
+
+            transform: translateZ(25px);
+        }
+        .hou1{
+
+            transform: translateZ(-25px);
+        }
+        .r{
+            margin: 300px auto;
+            box-sizing: border-box;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            opacity: 0.8;
+        }
+        .in-box img{
+            width: 50px;
+            height: 50px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="r">
+        <div class="box">
+            <div class="top"><img src="5.jpg"></div>
+            <div class="boot"><img src="5.jpg"></div>
+            <div class="left"><img src="5.jpg"></div>
+            <div class="right"><img src="5.jpg"></div>
+            <div class="qian"><img src="5.jpg"></div>
+            <div class="hou"><img src="5.jpg"></div>
+        </div>
+
+        <div class="in-box">
+            <div class="top1"><img src="5.jpg"></div>
+            <div class="boot1"><img src="5.jpg"></div>
+            <div class="left1"><img src="5.jpg"></div>
+            <div class="right1"><img src="5.jpg"></div>
+            <div class="qian1"><img src="5.jpg"></div>
+            <div class="hou1"><img src="5.jpg"></div>
+        </div>
+    </div>
+</body>
+</html>
